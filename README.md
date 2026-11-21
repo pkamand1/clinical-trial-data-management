@@ -4,7 +4,7 @@ The data management workflow for a fictional phase 2 trial, from the raw EDC exp
 
 The trial and its data are simulated (`src/simulate_edc.py`). Errors and site behaviors were injected on purpose and recorded, so each step is scored on whether it finds what is actually wrong, and on whether it raises queries on data that are fine.
 
-**Study XYZ-201:** randomized, double-blind, placebo-controlled; 240 subjects at 8 sites; visits at screening, day 1, and weeks 2, 4, 8, and 12. Raw forms use CDASH-style variable names: DM, IE, SV, VS, LB, AE, EX, and DS.
+Study XYZ-201: randomized, double-blind, placebo-controlled; 240 subjects at 8 sites; visits at screening, day 1, and weeks 2, 4, 8, and 12. Raw forms use CDASH-style variable names: DM, IE, SV, VS, LB, AE, EX, and DS.
 
 ## Results in brief
 
