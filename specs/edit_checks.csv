@@ -1,0 +1,12 @@
+check_id,form,fields,rule,query_text,severity
+EC01,VS,SYSBP,SYSBP < 70 or SYSBP > 220 mmHg,Systolic BP outside 70-220 mmHg. Please verify against source.,high
+EC02,VS,DIABP,DIABP < 40 or DIABP > 130 mmHg,Diastolic BP outside 40-130 mmHg. Please verify against source.,high
+EC03,VS,SYSBP DIABP,SYSBP <= DIABP,Systolic BP is not greater than diastolic BP. Please check for transposition.,high
+EC04,VS,PULSE,PULSE < 35 or PULSE > 150 beats/min,Pulse outside 35-150 beats/min. Please verify.,medium
+EC05,VS,TEMP,TEMP < 34.5 or TEMP > 40.5 C,Temperature outside 34.5-40.5 C. Please verify.,medium
+EC06,VS,record,more than one VS record for the same subject and visit,Duplicate vital signs record for this visit. Please delete one.,medium
+EC07,SV,SVSTDAT,visit date before informed consent date,Visit date is before the informed consent date.,critical
+EC08,AE,AESTDAT AEENDAT,AE end date before AE start date,AE end date is before the start date.,high
+EC09,LB,LBORRESU,result present without a unit,Lab unit is missing.,medium
+EC10,AE,AESTDAT,AE start date before first dose date,AE started before first dose; confirm it should be recorded as an adverse event and not medical history.,medium
+EC11,AE,AESER AESEV,serious AE recorded as mild,Serious AE recorded as mild severity. Please confirm seriousness criteria.,low

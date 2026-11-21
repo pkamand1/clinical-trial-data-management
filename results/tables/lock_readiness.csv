@@ -1,0 +1,10 @@
+SITEID,subjects,open_queries,major_deviations_to_review,minor_deviations
+01,30,11,4,11
+02,30,7,5,12
+03,30,4,0,5
+04,30,3,2,4
+05,30,7,1,7
+06,30,8,0,10
+07,30,7,5,3
+08,30,9,4,6
+Total,240,56,21,58

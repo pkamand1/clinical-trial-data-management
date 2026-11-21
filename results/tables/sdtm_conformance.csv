@@ -1,0 +1,50 @@
+rule,domain,description,records_failing,status
+SD01,DM,required variables present and populated,0,pass
+SD02,DM,every USUBJID exists in DM,0,pass
+SD05,DM,RFSTDTC is ISO 8601,0,pass
+SD05,DM,RFENDTC is ISO 8601,0,pass
+SD05,DM,RFICDTC is ISO 8601,0,pass
+SD06,DM,SEX uses controlled terminology,0,pass
+SD01,SV,required variables present and populated,0,pass
+SD02,SV,every USUBJID exists in DM,0,pass
+SD04,SV,SVSTDY is never 0,0,pass
+SD05,SV,SVSTDTC is ISO 8601,0,pass
+SD01,VS,required variables present and populated,0,pass
+SD02,VS,every USUBJID exists in DM,0,pass
+SD03,VS,--SEQ unique within USUBJID,0,pass
+SD04,VS,VSDY is never 0,0,pass
+SD05,VS,VSDTC is ISO 8601,0,pass
+SD06,VS,VSTESTCD uses controlled terminology,0,pass
+SD01,LB,required variables present and populated,0,pass
+SD02,LB,every USUBJID exists in DM,0,pass
+SD03,LB,--SEQ unique within USUBJID,0,pass
+SD04,LB,LBDY is never 0,0,pass
+SD05,LB,LBDTC is ISO 8601,0,pass
+SD06,LB,LBTESTCD uses controlled terminology,0,pass
+SD06,LB,LBNRIND uses controlled terminology,0,pass
+SD01,AE,required variables present and populated,0,pass
+SD02,AE,every USUBJID exists in DM,0,pass
+SD03,AE,--SEQ unique within USUBJID,0,pass
+SD04,AE,AESTDY is never 0,0,pass
+SD04,AE,AEENDY is never 0,0,pass
+SD05,AE,AESTDTC is ISO 8601,0,pass
+SD05,AE,AEENDTC is ISO 8601,0,pass
+SD06,AE,AESEV uses controlled terminology,0,pass
+SD06,AE,AESER uses controlled terminology,0,pass
+SD01,EX,required variables present and populated,0,pass
+SD02,EX,every USUBJID exists in DM,0,pass
+SD03,EX,--SEQ unique within USUBJID,0,pass
+SD04,EX,EXSTDY is never 0,0,pass
+SD04,EX,EXENDY is never 0,0,pass
+SD05,EX,EXSTDTC is ISO 8601,0,pass
+SD05,EX,EXENDTC is ISO 8601,0,pass
+SD01,DS,required variables present and populated,0,pass
+SD02,DS,every USUBJID exists in DM,0,pass
+SD03,DS,--SEQ unique within USUBJID,0,pass
+SD04,DS,DSSTDY is never 0,0,pass
+SD05,DS,DSSTDTC is ISO 8601,0,pass
+SD07,LB,one standard unit per test,0,pass
+SD08,LB,standard result present when original result present,10,issue
+SD09,AE,AEDECOD coded for every AETERM,0,pass
+SD10,AE,AEENDTC not before AESTDTC,4,issue
+SD11,VS,"one result per subject, visit, and test",32,issue

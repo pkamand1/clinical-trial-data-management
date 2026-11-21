@@ -1,0 +1,7 @@
+check_id,injected_errors,queries_raised,errors_caught,recall,queries_on_clean_data
+EC01,14,14,14,1.0,0
+EC03,8,8,8,1.0,0
+EC06,8,8,8,1.0,0
+EC07,1,1,1,1.0,0
+EC08,4,4,4,1.0,0
+EC09,10,10,10,1.0,0

@@ -1,0 +1,57 @@
+query_id,check_id,SUBJID,form,visit_or_record,field,value,query_text,SITEID,status
+Q0001,EC01,01-020,VS,WEEK 12,SYSBP,1350,Systolic BP outside 70-220 mmHg. Please verify against source.,01,OPEN
+Q0002,EC01,01-023,VS,WEEK 8,SYSBP,1040,Systolic BP outside 70-220 mmHg. Please verify against source.,01,OPEN
+Q0003,EC01,01-027,VS,WEEK 12,SYSBP,1140,Systolic BP outside 70-220 mmHg. Please verify against source.,01,OPEN
+Q0004,EC01,02-040,VS,WEEK 12,SYSBP,910,Systolic BP outside 70-220 mmHg. Please verify against source.,02,OPEN
+Q0005,EC01,03-067,VS,DAY 1,SYSBP,1380,Systolic BP outside 70-220 mmHg. Please verify against source.,03,OPEN
+Q0006,EC01,04-098,VS,SCREENING,SYSBP,1020,Systolic BP outside 70-220 mmHg. Please verify against source.,04,OPEN
+Q0007,EC01,05-122,VS,WEEK 8,SYSBP,1440,Systolic BP outside 70-220 mmHg. Please verify against source.,05,OPEN
+Q0008,EC01,06-157,VS,SCREENING,SYSBP,1210,Systolic BP outside 70-220 mmHg. Please verify against source.,06,OPEN
+Q0009,EC01,06-163,VS,WEEK 8,SYSBP,1350,Systolic BP outside 70-220 mmHg. Please verify against source.,06,OPEN
+Q0010,EC01,07-190,VS,SCREENING,SYSBP,1100,Systolic BP outside 70-220 mmHg. Please verify against source.,07,OPEN
+Q0011,EC01,07-200,VS,WEEK 4,SYSBP,1300,Systolic BP outside 70-220 mmHg. Please verify against source.,07,OPEN
+Q0012,EC01,08-224,VS,WEEK 12,SYSBP,1350,Systolic BP outside 70-220 mmHg. Please verify against source.,08,OPEN
+Q0013,EC01,08-234,VS,WEEK 8,SYSBP,1090,Systolic BP outside 70-220 mmHg. Please verify against source.,08,OPEN
+Q0014,EC01,08-238,VS,DAY 1,SYSBP,1150,Systolic BP outside 70-220 mmHg. Please verify against source.,08,OPEN
+Q0015,EC02,01-003,VS,WEEK 2,DIABP,141,Diastolic BP outside 40-130 mmHg. Please verify against source.,01,OPEN
+Q0016,EC02,01-020,VS,WEEK 8,DIABP,135,Diastolic BP outside 40-130 mmHg. Please verify against source.,01,OPEN
+Q0017,EC02,01-028,VS,DAY 1,DIABP,135,Diastolic BP outside 40-130 mmHg. Please verify against source.,01,OPEN
+Q0018,EC02,02-041,VS,SCREENING,DIABP,140,Diastolic BP outside 40-130 mmHg. Please verify against source.,02,OPEN
+Q0019,EC02,05-133,VS,WEEK 4,DIABP,152,Diastolic BP outside 40-130 mmHg. Please verify against source.,05,OPEN
+Q0020,EC02,07-204,VS,DAY 1,DIABP,150,Diastolic BP outside 40-130 mmHg. Please verify against source.,07,OPEN
+Q0021,EC03,01-003,VS,WEEK 2,SYSBP/DIABP,95,Systolic BP is not greater than diastolic BP. Please check for transposition.,01,OPEN
+Q0022,EC03,01-013,VS,SCREENING,SYSBP/DIABP,72,Systolic BP is not greater than diastolic BP. Please check for transposition.,01,OPEN
+Q0023,EC03,01-020,VS,WEEK 8,SYSBP/DIABP,82,Systolic BP is not greater than diastolic BP. Please check for transposition.,01,OPEN
+Q0024,EC03,01-028,VS,DAY 1,SYSBP/DIABP,82,Systolic BP is not greater than diastolic BP. Please check for transposition.,01,OPEN
+Q0025,EC03,02-041,VS,SCREENING,SYSBP/DIABP,76,Systolic BP is not greater than diastolic BP. Please check for transposition.,02,OPEN
+Q0026,EC03,05-133,VS,WEEK 4,SYSBP/DIABP,93,Systolic BP is not greater than diastolic BP. Please check for transposition.,05,OPEN
+Q0027,EC03,06-165,VS,DAY 1,SYSBP/DIABP,95,Systolic BP is not greater than diastolic BP. Please check for transposition.,06,OPEN
+Q0028,EC03,07-204,VS,DAY 1,SYSBP/DIABP,90,Systolic BP is not greater than diastolic BP. Please check for transposition.,07,OPEN
+Q0029,EC06,01-007,VS,WEEK 4,record,,Duplicate vital signs record for this visit. Please delete one.,01,OPEN
+Q0030,EC06,03-085,VS,WEEK 2,record,,Duplicate vital signs record for this visit. Please delete one.,03,OPEN
+Q0031,EC06,04-112,VS,SCREENING,record,,Duplicate vital signs record for this visit. Please delete one.,04,OPEN
+Q0032,EC06,06-157,VS,WEEK 2,record,,Duplicate vital signs record for this visit. Please delete one.,06,OPEN
+Q0033,EC06,06-160,VS,WEEK 2,record,,Duplicate vital signs record for this visit. Please delete one.,06,OPEN
+Q0034,EC06,06-175,VS,WEEK 2,record,,Duplicate vital signs record for this visit. Please delete one.,06,OPEN
+Q0035,EC06,07-199,VS,WEEK 4,record,,Duplicate vital signs record for this visit. Please delete one.,07,OPEN
+Q0036,EC06,07-204,VS,WEEK 8,record,,Duplicate vital signs record for this visit. Please delete one.,07,OPEN
+Q0037,EC07,02-042,SV,DAY 1,SVSTDAT,2025-06-01,Visit date is before the informed consent date.,02,OPEN
+Q0038,EC08,02-033,AE,URI,AEENDAT,2025-07-19,AE end date is before the start date.,02,OPEN
+Q0039,EC08,05-145,AE,rash,AEENDAT,2025-09-13,AE end date is before the start date.,05,OPEN
+Q0040,EC08,08-227,AE,fatigue,AEENDAT,2025-07-29,AE end date is before the start date.,08,OPEN
+Q0041,EC08,08-239,AE,diarrhoea,AEENDAT,2025-05-24,AE end date is before the start date.,08,OPEN
+Q0042,EC09,02-040,LB,SCREENING,LBORRESU,ALT,Lab unit is missing.,02,OPEN
+Q0043,EC09,03-090,LB,SCREENING,LBORRESU,ALT,Lab unit is missing.,03,OPEN
+Q0044,EC09,03-090,LB,WEEK 4,LBORRESU,CREAT,Lab unit is missing.,03,OPEN
+Q0045,EC09,04-116,LB,WEEK 4,LBORRESU,CREAT,Lab unit is missing.,04,OPEN
+Q0046,EC09,05-122,LB,SCREENING,LBORRESU,CREAT,Lab unit is missing.,05,OPEN
+Q0047,EC09,05-150,LB,WEEK 4,LBORRESU,CREAT,Lab unit is missing.,05,OPEN
+Q0048,EC09,06-176,LB,WEEK 4,LBORRESU,HGB,Lab unit is missing.,06,OPEN
+Q0049,EC09,08-214,LB,SCREENING,LBORRESU,ALT,Lab unit is missing.,08,OPEN
+Q0050,EC09,08-214,LB,SCREENING,LBORRESU,HGB,Lab unit is missing.,08,OPEN
+Q0051,EC09,08-216,LB,SCREENING,LBORRESU,CREAT,Lab unit is missing.,08,OPEN
+Q0052,EC11,02-044,AE,headache,AESER/AESEV,MILD,Serious AE recorded as mild severity. Please confirm seriousness criteria.,02,OPEN
+Q0053,EC11,05-134,AE,diarrhoea,AESER/AESEV,MILD,Serious AE recorded as mild severity. Please confirm seriousness criteria.,05,OPEN
+Q0054,EC11,06-166,AE,upper respiratory infection,AESER/AESEV,MILD,Serious AE recorded as mild severity. Please confirm seriousness criteria.,06,OPEN
+Q0055,EC11,07-193,AE,Nausea ,AESER/AESEV,MILD,Serious AE recorded as mild severity. Please confirm seriousness criteria.,07,OPEN
+Q0056,EC11,08-216,AE,back pain,AESER/AESEV,MILD,Serious AE recorded as mild severity. Please confirm seriousness criteria.,08,OPEN

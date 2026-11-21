@@ -1,0 +1,80 @@
+deviation_id,SUBJID,visit,severity,detail,SITEID
+PD01,01-002,WEEK 2,minor,"study day 23, window 12 to 18",01
+PD01,01-004,WEEK 8,minor,"study day 67, window 52 to 62",01
+PD01,01-009,WEEK 8,minor,"study day 67, window 52 to 62",01
+PD01,01-013,WEEK 8,minor,"study day 65, window 52 to 62",01
+PD01,01-030,WEEK 8,minor,"study day 47, window 52 to 62",01
+PD01,02-039,WEEK 2,minor,"study day 22, window 12 to 18",02
+PD01,02-042,WEEK 2,minor,"study day 30, window 12 to 18",02
+PD01,02-042,WEEK 4,minor,"study day 48, window 26 to 32",02
+PD01,02-042,WEEK 8,minor,"study day 68, window 52 to 62",02
+PD01,02-049,WEEK 2,minor,"study day 10, window 12 to 18",02
+PD01,02-051,WEEK 2,minor,"study day 9, window 12 to 18",02
+PD01,02-052,WEEK 4,minor,"study day 21, window 26 to 32",02
+PD01,02-054,WEEK 2,minor,"study day 22, window 12 to 18",02
+PD01,03-075,WEEK 12,minor,"study day 73, window 78 to 92",03
+PD01,03-077,WEEK 4,minor,"study day 22, window 26 to 32",03
+PD01,03-087,WEEK 2,minor,"study day 8, window 12 to 18",03
+PD01,03-088,WEEK 2,minor,"study day 7, window 12 to 18",03
+PD01,04-095,WEEK 4,minor,"study day 22, window 26 to 32",04
+PD01,04-103,WEEK 8,minor,"study day 50, window 52 to 62",04
+PD01,05-124,WEEK 4,minor,"study day 35, window 26 to 32",05
+PD01,05-128,WEEK 2,minor,"study day 22, window 12 to 18",05
+PD01,05-134,WEEK 2,minor,"study day 8, window 12 to 18",05
+PD01,05-135,WEEK 4,minor,"study day 24, window 26 to 32",05
+PD01,05-135,WEEK 12,minor,"study day 94, window 78 to 92",05
+PD01,05-137,WEEK 12,minor,"study day 76, window 78 to 92",05
+PD01,05-142,WEEK 12,minor,"study day 76, window 78 to 92",05
+PD01,06-151,WEEK 12,minor,"study day 97, window 78 to 92",06
+PD01,06-155,WEEK 2,minor,"study day 8, window 12 to 18",06
+PD01,06-156,WEEK 2,minor,"study day 22, window 12 to 18",06
+PD01,06-166,WEEK 4,minor,"study day 34, window 26 to 32",06
+PD01,06-168,WEEK 4,minor,"study day 36, window 26 to 32",06
+PD01,06-169,WEEK 12,minor,"study day 96, window 78 to 92",06
+PD01,07-191,WEEK 4,minor,"study day 35, window 26 to 32",07
+PD01,07-205,WEEK 2,minor,"study day 8, window 12 to 18",07
+PD01,08-217,WEEK 4,minor,"study day 21, window 26 to 32",08
+PD01,08-225,WEEK 2,minor,"study day 23, window 12 to 18",08
+PD01,08-228,WEEK 2,minor,"study day 7, window 12 to 18",08
+PD02,01-006,WEEK 8,minor,visit not performed while the subject was on study,01
+PD02,01-011,WEEK 2,minor,visit not performed while the subject was on study,01
+PD02,01-011,WEEK 8,minor,visit not performed while the subject was on study,01
+PD02,01-017,WEEK 12,minor,visit not performed while the subject was on study,01
+PD02,01-025,WEEK 2,minor,visit not performed while the subject was on study,01
+PD02,01-027,WEEK 8,minor,visit not performed while the subject was on study,01
+PD02,02-038,WEEK 4,minor,visit not performed while the subject was on study,02
+PD02,02-041,WEEK 12,minor,visit not performed while the subject was on study,02
+PD02,02-058,WEEK 12,minor,visit not performed while the subject was on study,02
+PD02,02-060,WEEK 12,minor,visit not performed while the subject was on study,02
+PD02,03-067,WEEK 4,minor,visit not performed while the subject was on study,03
+PD02,04-094,WEEK 8,minor,visit not performed while the subject was on study,04
+PD02,04-117,WEEK 2,minor,visit not performed while the subject was on study,04
+PD02,06-160,WEEK 8,minor,visit not performed while the subject was on study,06
+PD02,06-171,WEEK 8,minor,visit not performed while the subject was on study,06
+PD02,06-178,WEEK 12,minor,visit not performed while the subject was on study,06
+PD02,06-179,WEEK 4,minor,visit not performed while the subject was on study,06
+PD02,07-191,WEEK 12,minor,visit not performed while the subject was on study,07
+PD02,08-217,WEEK 8,minor,visit not performed while the subject was on study,08
+PD02,08-226,WEEK 8,minor,visit not performed while the subject was on study,08
+PD02,08-232,WEEK 12,minor,visit not performed while the subject was on study,08
+PD03,01-001,,major,compliance 71%,01
+PD03,01-022,,major,compliance 60%,01
+PD03,01-024,,major,compliance 57%,01
+PD03,01-030,,major,compliance 68%,01
+PD03,02-043,,major,compliance 78%,02
+PD03,02-051,,major,compliance 61%,02
+PD03,02-053,,major,compliance 71%,02
+PD03,02-056,,major,compliance 72%,02
+PD03,04-100,,major,compliance 65%,04
+PD03,04-103,,major,compliance 65%,04
+PD03,05-148,,major,compliance 56%,05
+PD03,07-191,,major,compliance 74%,07
+PD03,07-199,,major,compliance 64%,07
+PD03,07-200,,major,compliance 56%,07
+PD03,07-203,,major,compliance 56%,07
+PD03,07-206,,major,compliance 58%,07
+PD03,08-223,,major,compliance 78%,08
+PD03,08-224,,major,compliance 79%,08
+PD03,08-225,,major,compliance 60%,08
+PD03,08-240,,major,compliance 65%,08
+PD04,02-042,DAY 1,major,visit 2025-06-01 before consent 2025-06-04,02

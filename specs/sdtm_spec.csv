@@ -1,0 +1,100 @@
+domain,variable,label,type,origin,derivation
+DM,STUDYID,Study Identifier,Char,Assigned,
+DM,DOMAIN,Domain Abbreviation,Char,Assigned,
+DM,USUBJID,Unique Subject Identifier,Char,Derived,STUDYID || '-' || SUBJID
+DM,SUBJID,Subject Identifier for the Study,Char,Collected,
+DM,RFSTDTC,Subject Reference Start Date/Time,Char,Derived,EX.EXSTDAT (first dose)
+DM,RFENDTC,Subject Reference End Date/Time,Char,Derived,EX.EXENDAT (last dose)
+DM,RFICDTC,Date/Time of Informed Consent,Char,Collected,
+DM,SITEID,Study Site Identifier,Char,Collected,
+DM,AGE,Age,Num,Derived,year of RFICDTC minus DM.BRTHYR
+DM,AGEU,Age Units,Char,Collected,
+DM,SEX,Sex,Char,Collected,
+DM,RACE,Race,Char,Collected,
+DM,ETHNIC,Ethnicity,Char,Collected,
+DM,ARMCD,Planned Arm Code,Char,Derived,XYZ10 or PBO from DM.ARM
+DM,ARM,Description of Planned Arm,Char,Collected,
+DM,ACTARMCD,Actual Arm Code,Char,Collected,
+DM,ACTARM,Description of Actual Arm,Char,Collected,
+DM,COUNTRY,Country,Char,Collected,
+SV,STUDYID,Study Identifier,Char,Assigned,
+SV,DOMAIN,Domain Abbreviation,Char,Assigned,
+SV,USUBJID,Unique Subject Identifier,Char,Derived,STUDYID || '-' || SUBJID
+SV,VISITNUM,Visit Number,Num,Collected,
+SV,VISIT,Visit Name,Char,Collected,
+SV,EPOCH,Epoch,Char,Derived,"SCREENING before RFSTDTC, otherwise TREATMENT"
+SV,SVSTDTC,Start Date/Time of Visit,Char,Collected,
+SV,SVSTDY,Study Day of Start of Visit,Num,Derived,"date − RFSTDTC + 1 on or after RFSTDTC, date − RFSTDTC before (no day 0)"
+VS,STUDYID,Study Identifier,Char,Assigned,
+VS,DOMAIN,Domain Abbreviation,Char,Assigned,
+VS,USUBJID,Unique Subject Identifier,Char,Derived,STUDYID || '-' || SUBJID
+VS,VSSEQ,Sequence Number,Num,Derived,"sequence within USUBJID, ordered by date and test"
+VS,VSTESTCD,Vital Signs Test Short Name,Char,Collected,
+VS,VSTEST,Vital Signs Test Name,Char,Collected,
+VS,VSORRES,Result or Finding in Original Units,Char,Collected,
+VS,VSORRESU,Original Units,Char,Collected,
+VS,VSSTRESC,Character Result/Finding in Std Format,Char,Collected,
+VS,VSSTRESN,Numeric Result/Finding in Standard Units,Num,Derived,numeric VSORRES (units already standard)
+VS,VSSTRESU,Standard Units,Char,Collected,
+VS,VISITNUM,Visit Number,Num,Collected,
+VS,VISIT,Visit Name,Char,Collected,
+VS,EPOCH,Epoch,Char,Derived,"SCREENING before RFSTDTC, otherwise TREATMENT"
+VS,VSDTC,Date/Time of Measurements,Char,Collected,
+VS,VSDY,Study Day of Vital Signs,Num,Derived,"date − RFSTDTC + 1 on or after RFSTDTC, date − RFSTDTC before (no day 0)"
+LB,STUDYID,Study Identifier,Char,Assigned,
+LB,DOMAIN,Domain Abbreviation,Char,Assigned,
+LB,USUBJID,Unique Subject Identifier,Char,Derived,STUDYID || '-' || SUBJID
+LB,LBSEQ,Sequence Number,Num,Derived,"sequence within USUBJID, ordered by date and test"
+LB,LBTESTCD,Lab Test or Examination Short Name,Char,Collected,
+LB,LBTEST,Lab Test or Examination Name,Char,Collected,
+LB,LBORRES,Result or Finding in Original Units,Char,Collected,
+LB,LBORRESU,Original Units,Char,Collected,
+LB,LBSTRESC,Character Result/Finding in Std Format,Char,Collected,
+LB,LBSTRESN,Numeric Result/Finding in Standard Units,Num,Derived,LBORRES converted to standard units (creatinine umol/L ÷ 88.42 → mg/dL)
+LB,LBSTRESU,Standard Units,Char,Collected,
+LB,LBSTNRLO,Normal Range Lower Limit-Std Units,Num,Collected,
+LB,LBSTNRHI,Normal Range Upper Limit-Std Units,Num,Collected,
+LB,VISITNUM,Visit Number,Num,Collected,
+LB,VISIT,Visit Name,Char,Collected,
+LB,EPOCH,Epoch,Char,Derived,"SCREENING before RFSTDTC, otherwise TREATMENT"
+LB,LBDTC,Date/Time of Specimen Collection,Char,Collected,
+LB,LBDY,Study Day of Specimen Collection,Num,Derived,"date − RFSTDTC + 1 on or after RFSTDTC, date − RFSTDTC before (no day 0)"
+LB,LBNRIND,Reference Range Indicator,Char,Derived,"LOW, NORMAL, or HIGH against LBSTNRLO and LBSTNRHI"
+AE,STUDYID,Study Identifier,Char,Assigned,
+AE,DOMAIN,Domain Abbreviation,Char,Assigned,
+AE,USUBJID,Unique Subject Identifier,Char,Derived,STUDYID || '-' || SUBJID
+AE,AESEQ,Sequence Number,Num,Derived,"sequence within USUBJID, ordered by date and test"
+AE,AETERM,Reported Term for the Adverse Event,Char,Collected,
+AE,AEDECOD,Dictionary-Derived Term,Char,Derived,illustrative dictionary lookup of AETERM
+AE,AESEV,Severity/Intensity,Char,Collected,
+AE,AESER,Serious Event,Char,Collected,
+AE,AEREL,Causality,Char,Collected,
+AE,EPOCH,Epoch,Char,Derived,"SCREENING before RFSTDTC, otherwise TREATMENT"
+AE,AESTDTC,Start Date/Time of Adverse Event,Char,Collected,
+AE,AEENDTC,End Date/Time of Adverse Event,Char,Collected,
+AE,AESTDY,Study Day of Start of Adverse Event,Num,Derived,"date − RFSTDTC + 1 on or after RFSTDTC, date − RFSTDTC before (no day 0)"
+AE,AEENDY,Study Day of End of Adverse Event,Num,Derived,"date − RFSTDTC + 1 on or after RFSTDTC, date − RFSTDTC before (no day 0)"
+EX,STUDYID,Study Identifier,Char,Assigned,
+EX,DOMAIN,Domain Abbreviation,Char,Assigned,
+EX,USUBJID,Unique Subject Identifier,Char,Derived,STUDYID || '-' || SUBJID
+EX,EXSEQ,Sequence Number,Num,Derived,"sequence within USUBJID, ordered by date and test"
+EX,EXTRT,Name of Treatment,Char,Collected,
+EX,EXDOSE,Dose,Num,Collected,
+EX,EXDOSU,Dose Units,Char,Collected,
+EX,EXDOSFRQ,Dosing Frequency per Interval,Char,Collected,
+EX,EXROUTE,Route of Administration,Char,Collected,
+EX,EPOCH,Epoch,Char,Derived,"SCREENING before RFSTDTC, otherwise TREATMENT"
+EX,EXSTDTC,Start Date/Time of Treatment,Char,Collected,
+EX,EXENDTC,End Date/Time of Treatment,Char,Collected,
+EX,EXSTDY,Study Day of Start of Treatment,Num,Derived,"date − RFSTDTC + 1 on or after RFSTDTC, date − RFSTDTC before (no day 0)"
+EX,EXENDY,Study Day of End of Treatment,Num,Derived,"date − RFSTDTC + 1 on or after RFSTDTC, date − RFSTDTC before (no day 0)"
+DS,STUDYID,Study Identifier,Char,Assigned,
+DS,DOMAIN,Domain Abbreviation,Char,Assigned,
+DS,USUBJID,Unique Subject Identifier,Char,Derived,STUDYID || '-' || SUBJID
+DS,DSSEQ,Sequence Number,Num,Derived,"sequence within USUBJID, ordered by date and test"
+DS,DSTERM,Reported Term for the Disposition Event,Char,Collected,
+DS,DSDECOD,Standardized Disposition Term,Char,Collected,
+DS,DSCAT,Category for Disposition Event,Char,Collected,
+DS,EPOCH,Epoch,Char,Derived,"SCREENING before RFSTDTC, otherwise TREATMENT"
+DS,DSSTDTC,Start Date/Time of Disposition Event,Char,Collected,
+DS,DSSTDY,Study Day of Start of Disposition Event,Num,Derived,"date − RFSTDTC + 1 on or after RFSTDTC, date − RFSTDTC before (no day 0)"

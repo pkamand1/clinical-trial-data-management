@@ -1,0 +1,5 @@
+deviation_id,injected,detected,injected_detected,recall,detected_not_injected
+PD01,34,37,34,1.0,3
+PD02,21,21,21,1.0,0
+PD03,15,20,15,1.0,5
+PD04,1,1,1,1.0,0
